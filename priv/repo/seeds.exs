@@ -9,3 +9,13 @@
 #
 # We recommend using the bang functions (`insert!`, `update!`
 # and so on) as they will fail if something goes wrong.
+alias Blog.Repo
+alias Blog.Post
+
+[
+    %Post{
+        title: "Test Title",
+        body: "This is the body",
+        author: "Jim Bob"
+    }
+] |> Enum.each(&Repo.insert!(&1))

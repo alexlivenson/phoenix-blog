@@ -3,6 +3,5 @@ defmodule Blog.PostView do
   use JaSerializer.PhoenixView
 
   attributes [:title, :body, :author, :inserted_at, :updated_at]
-  
 
 end
