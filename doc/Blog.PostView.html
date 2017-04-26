@@ -1,0 +1,826 @@
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="ExDoc v0.15.1">
+    <title>Blog.PostView – blog v0.0.1</title>
+    <link rel="stylesheet" href="dist/app-af302bfcc4.css" />
+    
+    <script src="dist/sidebar_items-9034adb88f.js"></script>
+  </head>
+  <body data-type="modules">
+    <script>try { if(localStorage.getItem('night-mode')) document.body.className += ' night-mode'; } catch (e) { }</script>
+
+    <div class="main">
+<button class="sidebar-toggle">
+  <i class="icon-menu"></i>
+</button>
+<section class="sidebar">
+
+  
+  <a href="api-reference.html" class="sidebar-projectLink">
+    <div class="sidebar-projectDetails">
+      <h1 class="sidebar-projectName">
+        blog
+      </h1>
+      <h2 class="sidebar-projectVersion">
+        v0.0.1
+      </h2>
+    </div>
+    
+  </a>
+
+  <div class="sidebar-search">
+    <i class="icon-search"></i>
+    <input type="text" class="sidebar-searchInput" placeholder="search" autocomplete="off" />
+  </div>
+
+  <ul class="sidebar-listNav">
+    <li><a id="extras-list" href="#full-list">Pages</a></li>
+
+    
+      <li><a id="modules-list" href="#full-list">Modules</a></li>
+    
+
+    
+
+    
+  </ul>
+  <div class="gradient"></div>
+  <ul id="full-list" class="sidebar-fullList"></ul>
+</section>
+
+<section class="content">
+  <div class="content-outer">
+    <div id="content" class="content-inner">
+
+
+      <h1>
+        <small class="visible-xs">blog v0.0.1</small>
+        Blog.PostView
+        
+        
+      </h1>
+
+      
+
+      
+        <section id="summary" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#summary">
+              <i class="icon-link"></i>
+            </a>
+            Summary
+          </h1>
+          
+
+          
+  <div class="summary-functions summary">
+    <h2>
+      <a href="#functions">Functions</a>
+    </h2>
+    <div class="summary-row">
+  <div class="summary-signature">
+    <a href="#__phoenix_recompile__?/0">__phoenix_recompile__?()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Returns true whenever the list of templates changes in the filesystem</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#__resource__/0">__resource__()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The resource name, as an atom, for this view</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#__templates__/0">__templates__()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Returns the template root alongside all templates</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#attributes/2">attributes(data, conn)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Returns a map of attributes to be serialized</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#author/1">author(m)</a>
+  </div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#author/2">author(m, c)</a>
+  </div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#body/1">body(m)</a>
+  </div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#body/2">body(m, c)</a>
+  </div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#format/1">format(data)</a>
+  </div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#format/2">format(data, conn)</a>
+  </div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#format/3">format(data, conn, opts)</a>
+  </div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#id/2">id(data, c)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The id to be used in the resource object</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#inserted_at/1">inserted_at(m)</a>
+  </div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#inserted_at/2">inserted_at(m, c)</a>
+  </div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#links/2">links(data, conn)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>return links about this resource</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#meta/2">meta(struct, conn)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Adds meta data to the individual resource being serialized</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#preload/3">preload(data, conn, include_opts)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>A special callback that can be used to preload related data</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#relationships/2">relationships(struct, conn)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>A callback that should return a map of relationship structs</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#render/2">render(template, assigns \\ %{})</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Renders the given template locally</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#template_not_found/2">template_not_found(template, assigns)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Callback invoked when no template is found.
+By default it raises but can be customized
+to render a particular template</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#title/1">title(m)</a>
+  </div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#title/2">title(m, c)</a>
+  </div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#type/0">type()</a>
+  </div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#type/2">type(data, conn)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The type to be used in the resource object</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#updated_at/1">updated_at(m)</a>
+  </div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#updated_at/2">updated_at(m, c)</a>
+  </div>
+  
+</div>
+
+  </div>
+
+
+          
+
+        </section>
+      
+
+      
+
+      
+        <section id="functions" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#functions">
+              <i class="icon-link"></i>
+            </a>
+            Functions
+          </h1>
+          <div class="detail" id="__phoenix_recompile__?/0">
+  
+  <div class="detail-header">
+    <a href="#__phoenix_recompile__?/0" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">__phoenix_recompile__?()</span>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    <p>Returns true whenever the list of templates changes in the filesystem.</p>
+
+  </section>
+</div>
+<div class="detail" id="__resource__/0">
+  
+  <div class="detail-header">
+    <a href="#__resource__/0" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">__resource__()</span>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    <p>The resource name, as an atom, for this view</p>
+
+  </section>
+</div>
+<div class="detail" id="__templates__/0">
+  
+  <div class="detail-header">
+    <a href="#__templates__/0" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">__templates__()</span>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    <p>Returns the template root alongside all templates.</p>
+
+  </section>
+</div>
+<div class="detail" id="attributes/2">
+  
+  <div class="detail-header">
+    <a href="#attributes/2" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">attributes(data, conn)</span>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    <p>Returns a map of attributes to be serialized.</p>
+<p>The default implementation returns all the data’s fields except <code class="inline">id</code>, <code class="inline">type</code>,
+and <code class="inline">__struct__</code>.</p>
+<p>A typical non-DSL implementation looks like:</p>
+<pre><code class="elixir">defmodule UserSerializer do
+  def attributes(user, conn) do
+    Map.take(user, [:email, :name])
+  end
+end
+
+UserSerializer.attributes(user, conn)
+# %{email: &quot;...&quot;, name: &quot;...&quot;}</code></pre>
+<p>If using the <a href="https://hexdocs.pm/ja_serializer/0.11.2/JaSerializer.DSL.html"><code class="inline">JaSerializer.DSL</code></a> the default implementation is based on the
+<a href="https://hexdocs.pm/ja_serializer/0.11.2/JaSerializer.DSL.html#attributes/1"><code class="inline">JaSerializer.DSL.attributes/1</code></a> macro. Eg:</p>
+<pre><code class="elixir">defmodule UserSerializer do
+  attributes [:email, :name, :is_admin]
+end
+
+UserSerializer.attributes(user, conn)
+# %{email: &quot;...&quot;, name: &quot;...&quot;, is_admin: &quot;...&quot;}</code></pre>
+<p>Overriding this callback can be a good way to customize attribute behaviour
+based on the context (conn) with super.</p>
+<pre><code class="elixir">defmodule UserSerializer do
+  attributes [:email, :name, :is_admin]
+
+  def attributes(user, %{assigns: %{current_user: %{is_admin: true}}}) do
+    super(user, conn)
+  end
+
+  def attributes(user, conn) do
+    super(user, conn)
+    |&gt; Map.take([:email, :name])
+  end
+end
+
+UserSerializer.attributes(user, conn)
+# %{email: &quot;...&quot;, name: &quot;...&quot;}</code></pre>
+<p>Callback implementation for <a href="https://hexdocs.pm/ja_serializer/0.11.2/JaSerializer.Serializer.html#c:attributes/2"><code class="inline">JaSerializer.Serializer.attributes/2</code></a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="author/1">
+  
+  <div class="detail-header">
+    <a href="#author/1" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">author(m)</span>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    
+  </section>
+</div>
+<div class="detail" id="author/2">
+  
+  <div class="detail-header">
+    <a href="#author/2" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">author(m, c)</span>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    
+  </section>
+</div>
+<div class="detail" id="body/1">
+  
+  <div class="detail-header">
+    <a href="#body/1" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">body(m)</span>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    
+  </section>
+</div>
+<div class="detail" id="body/2">
+  
+  <div class="detail-header">
+    <a href="#body/2" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">body(m, c)</span>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    
+  </section>
+</div>
+<div class="detail" id="format/1">
+  
+  <div class="detail-header">
+    <a href="#format/1" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">format(data)</span>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    
+  </section>
+</div>
+<div class="detail" id="format/2">
+  
+  <div class="detail-header">
+    <a href="#format/2" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">format(data, conn)</span>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    
+  </section>
+</div>
+<div class="detail" id="format/3">
+  
+  <div class="detail-header">
+    <a href="#format/3" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">format(data, conn, opts)</span>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    
+  </section>
+</div>
+<div class="detail" id="id/2">
+  
+  <div class="detail-header">
+    <a href="#id/2" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">id(data, c)</span>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    <p>The id to be used in the resource object.</p>
+<p>http://jsonapi.org/format/#document-resource-objects</p>
+<p>Default implementation attempts to get the :id field from the struct.</p>
+<p>To override simply define the id function:</p>
+<pre><code class="elixir">def id(struct, _conn), do: struct.slug</code></pre>
+<p>Callback implementation for <a href="https://hexdocs.pm/ja_serializer/0.11.2/JaSerializer.Serializer.html#c:id/2"><code class="inline">JaSerializer.Serializer.id/2</code></a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="inserted_at/1">
+  
+  <div class="detail-header">
+    <a href="#inserted_at/1" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">inserted_at(m)</span>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    
+  </section>
+</div>
+<div class="detail" id="inserted_at/2">
+  
+  <div class="detail-header">
+    <a href="#inserted_at/2" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">inserted_at(m, c)</span>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    
+  </section>
+</div>
+<div class="detail" id="links/2">
+  
+  <div class="detail-header">
+    <a href="#links/2" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">links(data, conn)</span>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    <p>return links about this resource</p>
+<p>Callback implementation for <a href="https://hexdocs.pm/ja_serializer/0.11.2/JaSerializer.Serializer.html#c:links/2"><code class="inline">JaSerializer.Serializer.links/2</code></a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="meta/2">
+  
+  <div class="detail-header">
+    <a href="#meta/2" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">meta(struct, conn)</span>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    <p>Adds meta data to the individual resource being serialized.</p>
+<p>NOTE: To add meta data to the top level object pass the <code class="inline">meta:</code> option into
+YourSerializer.format/3.</p>
+<p>A nil return value results in no meta key being added to the serializer.
+A map return value will be formated with JaSerializer.Formatter.format/1.</p>
+<p>The default implementation returns nil.</p>
+<p>Callback implementation for <a href="https://hexdocs.pm/ja_serializer/0.11.2/JaSerializer.Serializer.html#c:meta/2"><code class="inline">JaSerializer.Serializer.meta/2</code></a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="preload/3">
+  
+  <div class="detail-header">
+    <a href="#preload/3" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">preload(data, conn, include_opts)</span>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    <p>A special callback that can be used to preload related data.</p>
+<p>Unlike the other callbacks, this callback is ONLY executed on the top level
+data being serialized. Also unlike any other callback when serializing a list
+of data (eg: from an index action) it recieves the entire list, not each
+individual post. When serializing a single record (eg, show, create, update)
+a single record is received.</p>
+<p>The primary use case of the callback is to preload all the relationships you
+need. For example:</p>
+<pre><code class="elixir">@default_includes [:category, comments: :author]
+def preload(record_or_records, _conn, []) do
+  MyApp.Repo.preload(record_or_records, @default_includes)
+end
+def preload(record_or_records, _conn, include_opts) do
+  MyApp.Repo.preload(record_or_records, include_opts)
+end</code></pre>
+<p>Callback implementation for <a href="https://hexdocs.pm/ja_serializer/0.11.2/JaSerializer.Serializer.html#c:preload/3"><code class="inline">JaSerializer.Serializer.preload/3</code></a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="relationships/2">
+  
+  <div class="detail-header">
+    <a href="#relationships/2" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">relationships(struct, conn)</span>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    <p>A callback that should return a map of relationship structs.</p>
+<p>Example:</p>
+<pre><code class="elixir">def relationships(article, _conn) do
+  %{
+    comments: %HasMany{
+      serializer:  MyApp.CommentView,
+      include:     true,
+      data:        article.comments,
+    },
+    author: %HasOne{
+      serializer:  MyApp.AuthorView,
+      include:     true,
+      data:        article.author,
+    }
+  }
+end</code></pre>
+<p>See JaSerializer.Relationship.HasMany for details on fields.</p>
+<p>When using the DSL this is defined for you based on the has_many and has_one
+macros.</p>
+<p>Callback implementation for <a href="https://hexdocs.pm/ja_serializer/0.11.2/JaSerializer.Serializer.html#c:relationships/2"><code class="inline">JaSerializer.Serializer.relationships/2</code></a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="render/2">
+  
+    <span id="render/1" />
+  
+  <div class="detail-header">
+    <a href="#render/2" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">render(template, assigns \\ %{})</span>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    <p>Renders the given template locally.</p>
+
+  </section>
+</div>
+<div class="detail" id="template_not_found/2">
+  
+  <div class="detail-header">
+    <a href="#template_not_found/2" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">template_not_found(template, assigns)</span>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>template_not_found(<a href="https://hexdocs.pm/phoenix/1.2.3/Phoenix.Template.html#t:name/0">Phoenix.Template.name</a>, map) :: no_return</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Callback invoked when no template is found.
+By default it raises but can be customized
+to render a particular template.</p>
+
+  </section>
+</div>
+<div class="detail" id="title/1">
+  
+  <div class="detail-header">
+    <a href="#title/1" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">title(m)</span>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    
+  </section>
+</div>
+<div class="detail" id="title/2">
+  
+  <div class="detail-header">
+    <a href="#title/2" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">title(m, c)</span>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    
+  </section>
+</div>
+<div class="detail" id="type/0">
+  
+  <div class="detail-header">
+    <a href="#type/0" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">type()</span>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    
+  </section>
+</div>
+<div class="detail" id="type/2">
+  
+  <div class="detail-header">
+    <a href="#type/2" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">type(data, conn)</span>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    <p>The type to be used in the resource object.</p>
+<p>http://jsonapi.org/format/#document-resource-objects</p>
+<p>Default implementation attempts to infer the type from the serializer
+module’s name. For example:</p>
+<pre><code class="elixir">MyApp.UserView becomes &quot;user&quot;
+MyApp.V1.Serializers.Post becomes &quot;post&quot;
+MyApp.V1.CommentsSerializer becomes &quot;comments&quot;</code></pre>
+<p>To override simply define the type function:</p>
+<pre><code class="elixir">def type(_post,_conn), do: &quot;category&quot;</code></pre>
+<p>Callback implementation for <a href="https://hexdocs.pm/ja_serializer/0.11.2/JaSerializer.Serializer.html#c:type/2"><code class="inline">JaSerializer.Serializer.type/2</code></a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="updated_at/1">
+  
+  <div class="detail-header">
+    <a href="#updated_at/1" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">updated_at(m)</span>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    
+  </section>
+</div>
+<div class="detail" id="updated_at/2">
+  
+  <div class="detail-header">
+    <a href="#updated_at/2" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">updated_at(m, c)</span>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    
+  </section>
+</div>
+
+        </section>
+      
+
+      
+          <footer class="footer">
+        <p>
+          <span class="line">
+            Built using
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" rel="help" target="_blank">ExDoc</a> (v0.15.1),
+          </span>
+          <span class="line">
+            designed by
+            <a href="https://twitter.com/dignifiedquire" target="_blank" title="@dignifiedquire">Friedel Ziegelmayer</a>.
+            </span>
+        </p>
+        <button class="night-mode-toggle" />
+      </footer>
+    </div>
+  </div>
+</section>
+</div>
+  <script src="dist/app-e9767fa739.js"></script>
+  </body>
+</html>
+

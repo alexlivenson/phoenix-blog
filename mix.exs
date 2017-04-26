@@ -37,7 +37,8 @@ defmodule Blog.Mixfile do
      {:gettext, "~> 0.11"},
      {:cowboy, "~> 1.0"},
      {:ja_serializer, "~> 0.11.2"},
-     {:cors_plug, "~> 1.1"}]
+     {:cors_plug, "~> 1.1"},
+     {:ex_doc, "~> 0.14", only: :dev, runtime: false}] # For generating docs
   end
 
   # Aliases are shortcuts or tasks specific to the current project.
