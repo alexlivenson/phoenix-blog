@@ -11,6 +11,10 @@ defmodule Blog.PostController do
     render(conn, "index.json-api", data: posts)
   end
 
+  def create(conn, %{"data" => _data = %{"type" => "posts", "attributes" => post_params}}) do
+    create(conn, %{"data" => _data = %{"type" => "post", "attributes" => post_params}})
+  end
+
   def create(conn, %{"data" => data = %{"type" => "post", "attributes" => _post_params}}) do
     changeset = Post.changeset(%Post{}, Params.to_attributes(data))
 
