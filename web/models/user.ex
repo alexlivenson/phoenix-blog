@@ -10,15 +10,13 @@ defmodule Blog.User do
     timestamps()
   end
 
-  @required_fields ~w(email password password_confirmation)
-  @optional_fields ~w()
-
   @doc """
   Builds a changeset based on the `struct` and `params`.
   """
   def changeset(struct, params \\ %{}) do
     struct
-    |> cast(params, @required_fields, @optional_fields) # NOTE: Alex L - I think this is the old way of doing it
+    |> cast(params, [:email, :password, :password_confirmation])
+    |> validate_required([:email, :password, :password_confirmation])
     |> validate_format(:email, ~r/@/)
     |> validate_length(:password, min: 8)
     |> validate_confirmation(:password)

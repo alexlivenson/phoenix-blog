@@ -4,7 +4,7 @@ defmodule Blog.UserTest do
   alias Blog.User
 
   @valid_attrs %{email: "jim@email.com", password: "12345678", password_confirmation: "12345678"}
-  @invalid_attrs %{}
+  @invalid_attrs %{email: "jimemail.com", password: "12345678", password_confirmation: "12345678"}
 
   test "changeset with valid attributes" do
     changeset = User.changeset(%User{}, @valid_attrs)
