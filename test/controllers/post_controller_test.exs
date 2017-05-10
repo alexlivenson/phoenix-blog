@@ -14,7 +14,7 @@ defmodule Blog.PostControllerTest do
 
     {:ok, conn: conn}
   end
-  
+
   defp relationships do
     %{}
   end

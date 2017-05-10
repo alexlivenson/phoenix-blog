@@ -36,6 +36,11 @@ defmodule Blog.PostController do
     render(conn, "show.json-api", data: post)
   end
 
+  # def update(conn, %{"id" => id, "data" => _data = %{"type" => "post", "attributes" => _post_params}}) do
+  #   dict = %{"id" => id, "data" => data = %{"type" => "posts", "attributes" => _post_params}}
+  #   update(conn, dict)
+  # end
+
   def update(conn, %{"id" => id, "data" => data = %{"type" => "post", "attributes" => _post_params}}) do
     post = Repo.get!(Post, id)
     changeset = Post.changeset(post, Params.to_attributes(data))
